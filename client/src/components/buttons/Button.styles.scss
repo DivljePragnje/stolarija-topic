@@ -1,0 +1,57 @@
+.button-primary {
+  display: inline-flex;
+  height: 50px;
+  width: 150px;
+  border: 1px solid #713434;
+  color: #713434;
+  margin: 20px 0;
+  background-color: #713434;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  /* HOVER ANIMATIONS */
+  .left-right,
+  .right-left {
+    width: 100%;
+    height: 100%;
+    background: #a34b4b;
+    position: absolute;
+    transition: all 0.35s ease-Out;
+    bottom: 0;
+  }
+
+  &:hover .left-right,
+  &:hover .right-left {
+    left: 0;
+  }
+
+  /* LEFT TO RIGHT */
+
+  .left-right {
+    left: -100%;
+  }
+  /* RIGHT TO LEFT */
+  .right-left {
+    left: 100%;
+  }
+
+  span {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    letter-spacing: 1px;
+    position: relative;
+    transition: all 0.35s ease-Out;
+  }
+}
